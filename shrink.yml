@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  shrink:
+    lang: Dockerfile
+    handler: ./shrink
+    image: alexellis2/shrink

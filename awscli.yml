@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  awscli:
+    lang: Dockerfile
+    handler: ./awscli
+    image: alexellis2/awscli

@@ -1,0 +1,10 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  nmap:
+    lang: Dockerfile
+    handler: ./nmap
+    image: alexellis2/nmap
+    
