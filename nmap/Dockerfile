@@ -8,6 +8,9 @@ RUN apk add --no-cache nmap
 ADD https://github.com/openfaas/faas/releases/download/0.6.9/fwatchdog /usr/bin
 RUN chmod +x /usr/bin/fwatchdog
 
+ENV read_timeout="60"
+ENV write_timeout="60"
+
 # Populate example here - i.e. "cat", "sha512sum" or "node index.js"
 ENV fprocess="xargs nmap"
 
